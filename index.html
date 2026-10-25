@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101416" />
+    <title>Для тебя — в полнолуние</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="fixed-sky" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="moon-halo"></div>
+    </div>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <main>
+      <section class="scene hero" id="home">
+        <div class="cloud-field cloud-field--back" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="hero__top"><span>25 · 10 · 2026</span><span>для тебя</span></div>
+        <div class="moon-wrap"><div class="moon"></div></div>
+        <div class="hero__copy">
+          <p class="eyebrow">когда небо стало ближе</p>
+          <h1>Лунная<br /><em>тишина</em></h1>
+          <p class="intro">Маленькое письмо для тебя — на ту ночь, когда хочется верить в чудеса.</p>
+        </div>
+        <button class="scroll-cue" data-next aria-label="Открыть письмо"><span>открыть</span><b>↓</b></button>
+      </section>
+
+      <section class="scene letter" id="letter">
+        <div class="letter__inner reveal">
+          <p class="eyebrow">письмо № 01</p>
+          <div class="letter__line"></div>
+          <p class="salutation">Моя хорошая,</p>
+          <p class="letter__body">Сегодня полная луна. И я подумал: пусть у тебя будет место, которое напомнит — ты не одна, даже когда вечер кажется слишком тихим.</p>
+          <p class="letter__body">Пусть эти облака заберут всё тяжёлое, а лунный свет оставит только самое тёплое. Ты заслуживаешь быть счастливой — не когда-нибудь, а прямо сейчас.</p>
+          <p class="signature">с нежностью,<br />твой человек</p>
+        </div>
+        <p class="side-note">листани дальше</p>
+      </section>
+
+      <section class="scene wish" id="wish">
+        <div class="cloud-field cloud-field--mid" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="wish__moon" aria-hidden="true"></div>
+        <div class="wish__content reveal">
+          <p class="eyebrow">на сегодня</p>
+          <h2>Загадай<br /><em>что-нибудь</em><br />светлое.</h2>
+          <p>Говорят, в полнолуние желания слышны лучше. Я уже знаю одно своё.</p>
+          <button class="wish-button" id="wishButton">загадать желание <span>↗</span></button>
+          <p class="wish-answer" id="wishAnswer" aria-live="polite">Пусть оно найдёт тебя самым красивым способом.</p>
+        </div>
+      </section>
+
+      <section class="scene finale" id="end">
+        <div class="finale__moon" aria-hidden="true"></div>
+        <div class="finale__content reveal">
+          <p class="eyebrow">и ещё одно</p>
+          <h2>Даже сквозь облака<br /><em>луна никуда не уходит.</em></h2>
+          <p>Как и я — рядом. В этот вечер и во все остальные.</p>
+          <button class="restart" data-restart>вернуться к началу ↑</button>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
